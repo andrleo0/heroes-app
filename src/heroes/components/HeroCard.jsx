@@ -21,7 +21,7 @@ export const HeroCard = ({
 
 
     return (
-        <div className="col">
+        <div className="col animate__animated animate__fadeIn">
             <div className="card">
 
                 <div className="row no-gutters">
@@ -29,22 +29,13 @@ export const HeroCard = ({
                     <div className="col-4">
 
                         <img src={ heroImageUrl } alt={ superhero } className="card-img"/>
+                        
                     </div>
-
                     <div className="col-8">
 
                         <div className="card-body">
-
                             <h5 className="card-title">{ superhero }</h5>
                             <p className="card-text">{ alter_ego }</p>
-
-                            {/* {
-                                ( alter_ego !== characters )
-                                && charactersByHero
-                                
-                                ( alter_ego !== characters )
-                                && <p>{ characters }</p>
-                            } */}
 
                             <CharactersByHero alter_ego={ alter_ego } characters={ characters }/>
 
@@ -55,7 +46,6 @@ export const HeroCard = ({
                             <Link to={`/hero/${ id }`}>
                                 Mas..
                             </Link> 
-
                         </div>
 
                     </div>
@@ -65,5 +55,6 @@ export const HeroCard = ({
 
             </div>
         </div>
+        
     )
 }
