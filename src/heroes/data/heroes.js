@@ -158,5 +158,6 @@ export const heroes = [
         'alter_ego':'Norrin Radd',
         'first_appearance':'The Fantastic Four #48',
         'characters':'Norrin Radd'
-    }
+    },
+    
 ]
